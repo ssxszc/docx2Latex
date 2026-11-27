@@ -10,9 +10,9 @@
 
 脚本使用 Python 3 标准库。API 基址应包含供应商要求的版本前缀，例如 /v1。脚本通过 POST 调用 /images/generations，支持单图返回的 b64_json 或公开 HTTPS 图片 URL。下载 URL 时不会转发 API 密钥。优先使用返回 PNG 的配置。将密钥保存在当前 Harness 可见的环境变量中。
 
-    python3 /path/to/thesis-proposal-beamer/scripts/generate_image.py \
+    python3 /path/to/docx2latex/scripts/generate_image.py \
       --endpoint https://images.example.com/v1 \
-      --model provider-image-model --key-env PROPOSAL_IMAGE_API_KEY \
+      --model provider-image-model --key-env DOCX2LATEX_IMAGE_API_KEY \
       --prompt-file /path/to/work/frame-06-prompt.txt \
       --output '/path/to/project/figures/Frame 06-整体技术路线.png'
 

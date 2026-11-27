@@ -16,7 +16,7 @@
 \definecolor{Muted}{HTML}{526275}
 \definecolor{Link}{HTML}{266E68}
 \ifcase\DefenseStyle\relax
-  \PackageError{proposal}{Choose a DefenseStyle from 1 to 6}{}
+  \PackageError{docx2latex}{Choose a DefenseStyle from 1 to 6}{}
 \or
   \definecolor{Accent}{HTML}{315D7B}
   \definecolor{Header}{HTML}{203248}
@@ -38,7 +38,7 @@
 \or
   \usecolortheme{dolphin}
 \else
-  \PackageError{proposal}{Choose a DefenseStyle from 1 to 6}{}
+  \PackageError{docx2latex}{Choose a DefenseStyle from 1 to 6}{}
 \fi
 \ifnum\DefenseStyle<5\relax
 \setbeamersize{text margin left=8mm,text margin right=8mm}
@@ -56,7 +56,7 @@
 \setbeamertemplate{footline}{%
   \leavevmode\begin{beamercolorbox}[wd=\paperwidth,ht=2.5ex,dp=1.1ex,
     leftskip=8mm,rightskip=8mm plus 1fil]{footer}
-    \scriptsize 硕士学位论文开题答辩\hfill
+    \scriptsize\insertshorttitle\hfill
     \insertframenumber\,/\,\inserttotalframenumber
   \end{beamercolorbox}}
 \else
@@ -68,9 +68,9 @@
 \newcommand{\slidefigure}[2][.67\textheight]{%
   \includegraphics[width=\linewidth,height=#1,keepaspectratio]{#2}}
 
-% 从附件提取并替换封面信息。缺项可省略。
-\title{论文题目}
-\subtitle{硕士学位论文开题答辩}
+% 用原文标题和署名填写封面，可设短标题供页脚使用。
+\title[报告标题]{报告标题}
+\subtitle{}
 \author{}
 \institute{}
 \date{}
@@ -80,12 +80,12 @@
   \titlepage
 \end{frame}
 
-% 在此写入正文 frame。默认十一页正文。
+% 按原文的大纲和目标总页数编写 frame，按需保留结束页。
 
 \begin{frame}
   \centering
   {\LARGE\bfseries 感谢聆听\par}
   \vspace{.8em}
-  {\large 敬请各位老师批评指正}
+  {\large 欢迎交流}
 \end{frame}
 \end{document}

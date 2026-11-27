@@ -1,4 +1,4 @@
 interface:
-  display_name: "硕士开题答辩制作 · 四种风格"
-  short_description: "从报告生成科研图与 Beamer，支持深蓝、青绿、酒红和浅灰四套标题栏风格"
-  default_prompt: "用 $thesis-proposal-beamer 根据附件生成开题答辩 Beamer。风格默认深蓝·学院，也可指定青绿·清透、酒红·典礼或浅灰·极简。"
+  display_name: "硕士开题答辩制作 · 六种风格"
+  short_description: "从报告生成科研图、逐图提示词与 Beamer，支持六种风格与自配生图 API"
+  default_prompt: "用 $thesis-proposal-beamer 根据附件生成开题答辩 Beamer，配图旁保留提示词。风格默认深蓝·学院，也可指定 Madrid + Dolphin 或 Boadilla + Dolphin。"
